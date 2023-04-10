@@ -5,13 +5,12 @@ This tool generates mock data for GraphQL queries. It allows you to test your fr
 ## How to Use
 
 1. Clone the repository by running `git clone https://github.com/joelnz/graphql-mock-data-generator` in your terminal.
-2. Install the required dependencies by running `npm install` in your terminal.
-3. Create a JSON configuration file with the schema you want to use. The configuration file should include the query, fields to be generated, and the number of results you want.
-4. Generate mock data by running `npm start -- --config path/to/config.json` in your terminal. This will print the generated mock data to the console.
+2. Install dependencies with `npm install`.
+3. Edit the `config.json` file in the project root directory to define your schema and specify the fields you want to generate mock data for.
+4. Run the tool with `npm start`. This will generate mock data and print it to the console.
+
 
 ### Example Config File
-
-Here's an example configuration file:
 
 ```json
 {
@@ -50,6 +49,7 @@ This configuration file retrieves items with specific fields, generates 25 resul
 
 ##  Customizing the Config File
 You can customize the configuration file to generate any data that you want by changing the query and fields properties. Refer to the faker.js documentation for available faker templates.
+https://fakerjs.dev/api/
 
 ##  Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue if you encounter any problems or have suggestions for improvements.
