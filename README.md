@@ -4,7 +4,7 @@ This tool generates mock data for GraphQL queries. It allows you to test your fr
 
 ## How to Use
 
-1. Clone the repository by running `git clone https://github.com/<username>/graphql-mock-data-generator.git` in your terminal.
+1. Clone the repository by running `git clone https://github.com/joelnz/graphql-mock-data-generator` in your terminal.
 2. Install the required dependencies by running `npm install` in your terminal.
 3. Create a JSON configuration file with the schema you want to use. The configuration file should include the query, fields to be generated, and the number of results you want.
 4. Generate mock data by running `npm start -- --config path/to/config.json` in your terminal. This will print the generated mock data to the console.
