@@ -1,0 +1,14 @@
+{
+  "name": "graphql-mock-data-generator",
+  "version": "1.0.0",
+  "description": "A simple tool to generate mock data based on a GraphQL schema",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "faker": "^5.5.3",
+    "graphql": "^15.5.0",
+    "yargs": "^17.3.1"
+  }
+}

@@ -1,0 +1,37 @@
+// This is a configuration file for the GraphQL Mock Data Generator tool.
+// To generate different results, you can modify the fields in the "fields" object,
+// which use the Faker library to generate realistic mock data.
+// You can find a list of available Faker schema at https://fakerjs.dev/api/
+// To change the number of results generated, you can modify the "results" value.
+// You should also update the GraphQL query in the "query" field to match your desired schema.
+
+{
+  "query": "{ items { name, email, company, position, address, phoneNumber } }",
+  "results": 25,
+  "fields": {
+    "name": {
+      "type": "String",
+      "faker": "{{name.findName}}"
+    },
+    "email": {
+      "type": "String",
+      "faker": "{{internet.email}}"
+    },
+    "company": {
+      "type": "String",
+      "faker": "{{company.companyName}}"
+    },
+    "position": {
+      "type": "String",
+      "faker": "{{name.jobTitle}}"
+    },
+    "address": {
+      "type": "String",
+      "faker": "{{address.streetAddress}}, {{address.city}}, {{address.state}}, {{address.zipCode}}, {{address.country}}"
+    },
+    "phoneNumber": {
+      "type": "String",
+      "faker": "{{phone.phoneNumber}}"
+    }
+  }
+}
